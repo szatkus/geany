@@ -522,6 +522,13 @@ static void init_builtin_filetypes(void)
 	ft->name = g_strdup("PowerShell");
 	filetype_make_title(ft, TITLE_SOURCE_FILE);
 	ft->group = GEANY_FILETYPE_GROUP_SCRIPT;
+
+#define COFFEESCRIPT
+	ft = filetypes[GEANY_FILETYPES_COFFEESCRIPT];
+	ft->name = g_strdup("CoffeeScript");
+	filetype_make_title(ft, TITLE_SOURCE_FILE);
+	ft->mime_type = g_strdup("text/x-coffeescript");
+	ft->group = GEANY_FILETYPE_GROUP_SCRIPT;
 }
 
 
